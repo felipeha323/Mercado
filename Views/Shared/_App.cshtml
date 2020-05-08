@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Mercado</title>
+    <link href="~/lib/fontawesome-free/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="~/lib/simple-line-icons/css/simple-line-icons.css" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/stylish-portfolio.min.css" />
+   
+</head>
+<body style="background-color:#87CEEB ;">
+
+
+    <a class="menu-toggle rounded" href="#">
+        <i class="fas fa-bars"></i>
+    </a>
+
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a class="js-scroll-trigger" href="#page-top">Componentes</a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="nav-link text-uppercase text-expanded" asp-area="" asp-controller="Home" asp-action="Index">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="sidebar-nav-item">
+                <a class="nav-link text-uppercase text-expanded" asp-area="" asp-controller="Pais" asp-action="Index">Paises <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="nav-link text-uppercase text-expanded" asp-area="" asp-controller="Departamentoes" asp-action="Index">Departamento <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="nav-link text-uppercase text-expanded" asp-area="" asp-controller="Ciudads" asp-action="Index">Ciudades<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="nav-link text-uppercase text-expanded" asp-area="" asp-controller="Unidad_Residencial" asp-action="Index">Unidad Residencial <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="nav-link text-uppercase text-expanded" asp-area="" asp-controller="Apartamentoes" asp-action="Index">Apartamentos <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="nav-link text-uppercase text-expanded" asp-area="" asp-controller="Propietarios" asp-action="Index">Propietario <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="nav-link text-uppercase text-expanded" asp-area="" asp-controller="Productoes" asp-action="Index">Productos <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="nav-link text-uppercase text-expanded" asp-area="" asp-controller="Mercado_" asp-action="Index">Mercado <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="nav-link text-uppercase text-expanded" asp-area="" asp-controller="Compras" asp-action="Index">Compra<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="thead-dark">
+        <div class="container text-center my-auto">
+            <h1>Comprar te sale gratis</h1>
+        </div>
+        <div class="overlay"></div>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    
+    <section id="contact" class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+        <br />
+        <small>
+            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+        </small>
+    </section>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <ul class="list-inline mb-5">
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="#">
+                        <i class="icon-social-facebook"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="#">
+                        <i class="icon-social-twitter"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white" href="#">
+                        <i class="icon-social-github"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="text-muted small mb-0">Copyright &copy; Your Mercado 2019</p>
+        </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/jquery-easing/jquery.easing.min.js"></script>
+    <script src="~/js/stylish-portfolio.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
